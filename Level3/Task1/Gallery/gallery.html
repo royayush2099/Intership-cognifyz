@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="gallery-styles.css">
+</head>
+<body>
+    <div class="gallery">
+        <img src="https://img.freepik.com/free-photo/luxurious-car-parked-highway-with-illuminated-headlight-sunset_181624-60607.jpg?size=626&ext=jpg&ga=GA1.1.94363069.1718373359&semt=sph" alt="Image 1" class="thumbnail" onclick="enlargeImage(this)">
+        <img src="https://img.freepik.com/free-photo/sports-car-driving-asphalt-road-night-generative-ai_188544-8052.jpg?w=996&t=st=1721314568~exp=1721315168~hmac=d1c67d6f6f891cc2ff1242bd57b04d694ec9fb4793879fa83c88718bddc0a803" alt="Image 2" class="thumbnail" onclick="enlargeImage(this)">
+        <img src="https://img.freepik.com/free-photo/batmobile-concept-car-with-neon-lights_23-2151649877.jpg?size=626&ext=jpg&ga=GA1.1.94363069.1718373359&semt=sph" alt="Image 3" class="thumbnail" onclick="enlargeImage(this)">
+        <img src="https://via.placeholder.com/150" alt="Image 4" class="thumbnail" onclick="enlargeImage(this)">
+    </div>
+    <div id="modal" class="modal" onclick="closeModal()">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modal-img">
+    </div>
+    <script src="gallery-script.js"></script>
+</body>
+</html>
